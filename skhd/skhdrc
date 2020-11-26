@@ -132,7 +132,8 @@ shift + alt - s : yabai -m space --destroy
 # rotate
 alt - r : yabai -m space --rotate 270
 # flip vertically
-alt - v : yabai -m space --mirror y-axis
+alt + shift - v : yabai -m space --mirror y-axis
+alt + shift - h : yabai -m space --mirror x-axis
 
 
 
