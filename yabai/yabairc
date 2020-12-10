@@ -44,4 +44,13 @@ yabai -m config left_padding                 0
 yabai -m config right_padding                0
 yabai -m config window_gap                   06
 
+yabai -m rule --add app="^Free Download Manager$" manage=off
+yabai -m rule --add app="^Zoom$" manage=off
+yabai -m rule --add app="^Todoist$" manage=off
+yabai -m rule --add app="^Slack$" manage=off
+#yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+
+
+
 echo "yabai configuration loaded.."
