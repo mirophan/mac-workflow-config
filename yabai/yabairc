@@ -46,11 +46,31 @@ yabai -m config window_gap                   06
 
 yabai -m rule --add app="^Free Download Manager$" manage=off
 yabai -m rule --add app="^Zoom$" manage=off
-yabai -m rule --add app="^Todoist$" manage=off
+#yabai -m rule --add app="^Todoist$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 #yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^The Unarchiver$" manage=off
+yabai -m rule --add app="^NordVPN$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+yabai -m rule --add app="^MiniDSP$" manage=off
+yabai -m rule --add app="^Webex$" manage=off
+yabai -m rule --add app="^Karabiner$" manage=off
+yabai -m rule --add app="^KSP$" manage=off
 
+# Snippet to disable wm for the mac internal screen
+yabai -m query --spaces --display 3 |
+  jq '.[] | select(."native-fullscreen" == 0).index' |
+  xargs -I{} yabai -m space {} --layout float
+
+read -r -d '' action <<- 'EOF'
+  yabai -m query --spaces --display 3 |
+    jq ".[] | select(.id == $YABAI_SPACE_ID and .\"native-fullscreen\" == 0).index" |
+    xargs -I{} yabai -m space {} --layout float
+EOF
+
+yabai -m signal --add event=space_changed action="$action"
 
 
 echo "yabai configuration loaded.."
+
