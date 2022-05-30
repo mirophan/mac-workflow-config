@@ -115,6 +115,8 @@ alt - 4 : yabai -m space --focus 4
 alt - 5 : yabai -m space --focus 5
 alt - 6 : yabai -m space --focus 6
 alt - 7 : yabai -m space --focus 7
+alt - 8 : yabai -m space --focus 8
+alt - 9 : yabai -m space --focus 9
 
 # send window to desktop and follow focus
 # shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
@@ -122,10 +124,10 @@ shift + alt - 1 : yabai -m window --space  1; yabai -m space --focus 1
 shift + alt - 2 : yabai -m window --space  2; yabai -m space --focus 2
 shift + alt - 3 : yabai -m window --space  3; yabai -m space --focus 3
 shift + alt - 4 : yabai -m window --space  4; yabai -m space --focus 4
-# cannot go beyod 4 as shit + alt - 5 conflicts with emacs query replace (c - %) command -> need to remap
+# note that 'shift + alt - 5' conflicts with emacs query replace (c - %) command -> need to remap in emacs
 shift + alt - 5 : yabai -m window --space  5; yabai -m space --focus 5
-shift + alt - 6 : yabai -m window --space  5; yabai -m space --focus 6
-shift + alt - 7 : yabai -m window --space  5; yabai -m space --focus 7
+shift + alt - 6 : yabai -m window --space  6; yabai -m space --focus 6
+shift + alt - 7 : yabai -m window --space  7; yabai -m space --focus 7
 
 # create and destroy spaces
 shift + alt - w : yabai -m space --create
