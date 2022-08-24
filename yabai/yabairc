@@ -44,19 +44,25 @@ yabai -m config left_padding                 0
 yabai -m config right_padding                0
 yabai -m config window_gap                   06
 
-yabai -m rule --add app="^Free Download Manager$" manage=off
+#yabai -m rule --add app="^Free Download Manager$" manage=off
 yabai -m rule --add app="^Zoom$" manage=off
 #yabai -m rule --add app="^Todoist$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 #yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^The Unarchiver$" manage=off
-yabai -m rule --add app="^NordVPN$" manage=off
-yabai -m rule --add app="^Bitwarden$" manage=off
+#yabai -m rule --add app="^NordVPN$" manage=off
+#yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app="^MiniDSP$" manage=off
 yabai -m rule --add app="^Webex$" manage=off
 yabai -m rule --add app="^Karabiner$" manage=off
 yabai -m rule --add app="^KSP$" manage=off
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add app="^Scroll Reverser$" manage=off
+yabai -m rule --add app="^Porting Kit$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^Game$" manage=off
+yabai -m rule --add app="^Tor Browser$" manage=off
 
 # Snippet to disable wm for the mac internal screen
 yabai -m query --spaces --display 3 |
