@@ -250,10 +250,10 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "n",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "option"
                                         ]
                                     }
                                 },
@@ -282,10 +282,10 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "p",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "option"
                                         ]
                                     }
                                 },
