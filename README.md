@@ -4,5 +4,5 @@
 ```bash
 ln -s ~/projects/mac-workflow-config/karabiner/ ~/.config/karabiner
 ln -s ~/projects/mac-workflow-config/skhd ~/.config/skhd
-ln -s ~/projects/mac-workflow-config/yabi ~/.config/yabai
+ln -s ~/projects/mac-workflow-config/yabai ~/.config/yabai
 ```
