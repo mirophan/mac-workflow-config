@@ -50,6 +50,8 @@ yabai -m rule --add app="^Zoom$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 #yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^System Preferences$" manage=off
+#yabai -m rule --add app="^Calendar$" manage=off
+yabai -m rule --add app="^Calendar$" title="(General|^$)" manage=off # treat event suggestions as floating
 yabai -m rule --add app="^The Unarchiver$" manage=off
 #yabai -m rule --add app="^NordVPN$" manage=off
 #yabai -m rule --add app="^Bitwarden$" manage=off
@@ -62,7 +64,10 @@ yabai -m rule --add app="^Scroll Reverser$" manage=off
 yabai -m rule --add app="^Porting Kit$" manage=off
 yabai -m rule --add app="^Archive Utility$" manage=off
 yabai -m rule --add app="^Game$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^DOTA$" manage=off
 yabai -m rule --add app="^Tor Browser$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 
 # Snippet to disable wm for the mac internal screen
 yabai -m query --spaces --display 3 |
