@@ -425,7 +425,56 @@
                             }
                         ]
                     },
-                    {
+
+		    {
+			"description": "Modify key mappings for non_us_backslash",
+			"manipulators": [
+			    {
+				"description": "CMD+non_us_backslash to right mouse click",
+				"conditions": [
+				    {
+					"bundle_identifiers": [],
+					"type": "frontmost_application_unless"
+				    }
+				],
+				"from": {
+				    "key_code": "non_us_backslash",
+				    "modifiers": {
+					"mandatory": ["left_command"]
+				    }
+				},
+				"to": [
+				    {
+					"pointing_button": "button2"
+				    }
+				],
+				"type": "basic"
+			    },
+			    {
+				"description": "non_us_backslash to left mouse click",
+				"conditions": [
+				    {
+					"bundle_identifiers": [],
+					"type": "frontmost_application_unless"
+				    }
+				],
+				"from": {
+				    "key_code": "non_us_backslash",
+				    "modifiers": {
+					"optional": ["any"]
+				    }
+				},
+				"to": [
+				    {
+					"pointing_button": "button1"
+				    }
+				],
+				"type": "basic"
+			    }
+			]
+		    },
+
+		    {
                         "description": "option + shift + </> to CMD + up/down",
                         "manipulators": [
                             {
@@ -874,16 +923,6 @@
                     "to": [
                         {
                             "key_code": "left_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "pointing_button": "button1"
                         }
                     ]
                 }
