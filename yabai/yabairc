@@ -68,6 +68,7 @@ yabai -m rule --add app="^Steam$" manage=off
 yabai -m rule --add app="^DOTA$" manage=off
 yabai -m rule --add app="^Tor Browser$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^CrossOver$" manage=off
 
 # Snippet to disable wm for the mac internal screen
 yabai -m query --spaces --display 3 |
